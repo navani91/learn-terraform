@@ -11,7 +11,7 @@ OUTPUT "sample1" {
  value = var.smaple1
 
 }
-varible "cli"{}
+variable "cli"{}
 
 output "cli"{
  value = var.cli
