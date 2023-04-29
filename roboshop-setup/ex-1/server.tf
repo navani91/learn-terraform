@@ -25,6 +25,7 @@ resource "aws_instance" "mongodb" {
 }
 
 }
+
 resource "aws_route53_record" "mongodb" {
   zone_id = Z064060926SK6NII7Q63U
   name    = "mongodb-dev.navanidevops.online"
