@@ -50,7 +50,7 @@ resource "aws_route53_record" "catalogue" {
   type    = "A"
   ttl     = 30
   records = [aws_instance.catalogue.private_ip]
-]
+}
 
 resource "aws_instance" "redis" {
  ami = "0a017d8ceb274537d"
