@@ -7,16 +7,17 @@ resource "aws_instance" "frontend" {
 
 }
 
-}
 
-resource "aws_instance" "mangodb" {
+}
+resource "aws_instance" "mongodb" {
  ami = "0a017d8ceb274537d"
  instance_type = "t3.micro"
  vpc_security_group_ids = ["sg-06e0c53ec37e1d493"]
  tags = {
-  Name = "mangodb"
+  Name = "mongodb"
 
 }
+
 
 }
 
@@ -44,6 +45,18 @@ resource "aws_instance" "redis" {
 
 }
 
+resource "aws_instance" "cart" {
+ ami = "0a017d8ceb274537d"
+ instance_type = "t3.micro"
+ vpc_security_group_ids = ["sg-06e0c53ec37e1d493"]
+ tags = {
+  Name = "cart"
+
+}
+
+
+}
+
 resource "aws_instance" "mysql" {
  ami = "0a017d8ceb274537d"
  instance_type = "t3.micro"
@@ -56,12 +69,24 @@ resource "aws_instance" "mysql" {
 
 }
 
-resource "aws_instance" "rabbitmq" {
+resource "aws_instance" "user" {
  ami = "0a017d8ceb274537d"
  instance_type = "t3.micro"
  vpc_security_group_ids = ["sg-06e0c53ec37e1d493"]
  tags = {
-  Name = "rabbitmq"
+  Name = "user"
+
+}
+
+
+}
+
+resource "aws_instance" "shipping" {
+ ami = "0a017d8ceb274537d"
+ instance_type = "t3.micro"
+ vpc_security_group_ids = ["sg-06e0c53ec37e1d493"]
+ tags = {
+  Name = "shipping"
 
 }
 
@@ -80,35 +105,12 @@ resource "aws_instance" "payment" {
 
 }
 
-resource "aws_instance" "shipping" {
+resource "aws_instance" "rabbitmq" {
  ami = "0a017d8ceb274537d"
  instance_type = "t3.micro"
  vpc_security_group_ids = ["sg-06e0c53ec37e1d493"]
  tags = {
-  Name = "shipping"
-
-}
-
-
-}
-resource "aws_instance" "user" {
- ami = "0a017d8ceb274537d"
- instance_type = "t3.micro"
- vpc_security_group_ids = ["sg-06e0c53ec37e1d493"]
- tags = {
-  Name = "user"
-
-}
-
-
-}
-
-resource "aws_instance" "cart" {
- ami = "0a017d8ceb274537d"
- instance_type = "t3.micro"
- vpc_security_group_ids = ["sg-06e0c53ec37e1d493"]
- tags = {
-  Name = "cart"
+  Name = "rabbitmq"
 
 }
 
