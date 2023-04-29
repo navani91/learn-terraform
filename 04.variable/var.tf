@@ -1,14 +1,14 @@
-variable"sample" {
+variable "sample" {
  default "Hello World"
 }
 
-output"sample" {
+output "sample" {
  value = var.sample
 }
 variable "sample1"{}
 
 OUTPUT "sample1" {
- value = var.smaple1
+ value = var.sample1
 
 }
 variable "cli"{}
