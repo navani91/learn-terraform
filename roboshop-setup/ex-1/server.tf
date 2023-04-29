@@ -52,8 +52,6 @@ resource "aws_route53_record" "catalogue" {
   records = [aws_instance.catalogue.private_ip]
 }
 
-}
-
 resource "aws_instance" "redis" {
  ami = "0a017d8ceb274537d"
  instance_type = "t3.micro"
