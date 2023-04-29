@@ -1,6 +1,6 @@
 variable "sample" {
- default "{Hello World}"
-}
+ default "{"Hello World"}"
+ }
 output "sample" {
  value = var.sample
 }
