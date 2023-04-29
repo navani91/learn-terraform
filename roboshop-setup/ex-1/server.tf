@@ -134,6 +134,7 @@ resource "aws_route53_record" "rabbitmq" {
   type    = "A"
   ttl     = 30
   records = [aws_instance.rabbitmq.private_ip]
+}
 
 resource "aws_instance" "payment" {
  ami = "0a017d8ceb274537d"
