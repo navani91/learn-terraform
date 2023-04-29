@@ -9,7 +9,7 @@ resource "aws_instance" "frontend" {
 }
 
 resource "aws_route53_record" "frontend" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "frontend-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -27,7 +27,7 @@ resource "aws_instance" "mongodb" {
 }
 
 resource "aws_route53_record" "mongodb" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "mongodb-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -45,7 +45,7 @@ resource "aws_instance" "catalogue" {
 }
 
 resource "aws_route53_record" "catalogue" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "catalogue-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -62,7 +62,7 @@ resource "aws_instance" "redis" {
 
 }
 resource "aws_route53_record" "redis" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "redis-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -79,7 +79,7 @@ resource "aws_instance" "mysql" {
 
 }
 resource "aws_route53_record" "mysql" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "mysql-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -96,7 +96,7 @@ resource "aws_instance" "cart" {
 
 }
 resource "aws_route53_record" "cart" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "cart-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -114,7 +114,7 @@ resource "aws_instance" "user" {
 }
 
 resource "aws_route53_record" "user" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "user-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -132,7 +132,7 @@ resource "aws_instance" "rabbitmq" {
 }
 
 resource "aws_route53_record" "rabbitmq" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "rabbitmq-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -150,7 +150,7 @@ resource "aws_instance" "payment" {
 }
 
 resource "aws_route53_record" "payment" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "payment-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
@@ -168,7 +168,7 @@ resource "aws_instance" "shipping" {
 }
 
 resource "aws_route53_record" "shipping" {
-  zone_id = Z064060926SK6NII7Q63U
+  zone_id = "Z064060926SK6NII7Q63U"
   name    = "shipping-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
