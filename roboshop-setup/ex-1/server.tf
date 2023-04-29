@@ -169,6 +169,7 @@ resource "aws_route53_record" "shipping" {
   type    = "A"
   ttl     = 30
   records = [aws_instance.shipping.private_ip]
+ }
 
 
 
