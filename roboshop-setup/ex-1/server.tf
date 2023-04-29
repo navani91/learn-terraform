@@ -15,6 +15,7 @@ resource "aws_route53_record" "frontend" {
   ttl     = 30
   records = [aws_instance.frontend.private_ip]
 }
+
 resource "aws_instance" "mongodb" {
  ami = "0a017d8ceb274537d"
  instance_type = "t3.micro"
@@ -30,6 +31,7 @@ resource "aws_route53_record" "mongodb" {
   type    = "A"
   ttl     = 30
   records = [aws_instance.mongodb.private_ip]
+}
 
 resource "aws_instance" "catalogue" {
  ami = "0a017d8ceb274537d"
@@ -40,12 +42,14 @@ resource "aws_instance" "catalogue" {
 }
 
 }
+
 resource "aws_route53_record" "catalogue" {
   zone_id = Z064060926SK6NII7Q63U
   name    = "catalogue-dev.navanidevops.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.catalogue.private_ip]
+]
 
 resource "aws_instance" "redis" {
  ami = "0a017d8ceb274537d"
