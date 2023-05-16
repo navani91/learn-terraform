@@ -5,7 +5,9 @@ component = each.value["name"]
 instance_type = each.value ["type"]
 }
 
-
+module "sg" {
+ source = "./-1"
+}
 
 variable "instances" {
   default = {
